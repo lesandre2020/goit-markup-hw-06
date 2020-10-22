@@ -19,7 +19,7 @@
   
         <ul class="list displflex line-header">
           <li><a href="./index.html" class="header-nav current">Студия</a></li>
-          <li><a href="./portfolio.html" class="header-nav">Портфолио</a></li>
+          <li><a href="./portfolio.html" class="header-nav ">Портфолио</a></li>
           <li><a href="" class="header-nav">Контакты</a></li>
         </ul>
       </nav>
@@ -51,7 +51,36 @@
         <a href="" class="button">Заказать услугу</a>
       </section>
       
-      
+      <div id="form-main">
+        <div id="form-div">
+          <form class="form" id="form1" name="form1">
+            <p class="name"><input class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" id="name"
+                name="name" placeholder="Имя" type="text"></p>
+            <p class="email"><input class="validate[required,custom[email]] feedback-input" id="email" name="email"
+                placeholder="Почта" type="text"></p>
+            <p class="text">
+              <textarea class="validate[required,length[6,300]] feedback-input" id="comment" name="text"
+                placeholder="Сообщение"></textarea></p>
+            <div class="submit">
+              <input id="button-blue" type="submit" value="Отправить">
+              <div class="ease"></div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+
+
+
+      <!-- <form action="" class="contact-form">
+        <input type="text" class="contact-form-input" >
+        <input type="email" class="contact-form-input" >
+        <input type="tel" class="contact-form-input" >
+
+        <button type="submit" class="contact-form-btm">Отправить</button>
+        
+      </form> -->
+
         <section class="main-content advantages">
           <div class="conteiner">
           <h2 hidden>Наши преимущества</h2>
@@ -120,20 +149,20 @@
               <li >
                 <div class="thumb">
                   <img src="./images/desktop.jpg" alt="Фото Десктопные приложения" width="370" height="294" />
-                  <h3 class="label">Десктопные приложения</h3>
+                  <h3 class="lab">Десктопные приложения</h3>
                 </div>
                 
               </li>
               <li>
                 <div class="thumb">
                   <img src="./images/mobile.jpg" alt="Фото Мобильные приложения" width="370" height="294" />
-                  <h3 class="label">Мобильные приложения</h3>
+                  <h3 class="lab">Мобильные приложения</h3>
                 </div>
               </li>
               <li>
                 <div class="thumb">
                   <img src="./images/design.jpg" alt="Фото Дизайнерские решения" width="370" height="294" />
-                  <h3 class="label">Дизайнерские решения</h3>
+                  <h3 class="lab">Дизайнерские решения</h3>
                 </div>
               </li>
             </ul>
@@ -423,11 +452,24 @@
           </li>
 
           <li>
-            <div >
-              <h3 hidden>Forma</h3>
-            
+
+            <div class="footer-wrapper">
+              <div id="newsletter">
+                <h3 class="footer-subtitle">Подпишитесь на на рассылку</h3>
+                <form method="post" action="#">
+                  
+                  <input type="text" placeholder="E-mail">
+                  <button type="submit" title="footer-submit">Подписаться 
+                    <svg width="24" height="24">
+                      <use href="./images/sprite.svg#icon-icon-send"></use>
+                    </svg>
+                  </button>
+                </form>
+              </div>
             </div>
-            
+
+
+
           </li>
 
         </ul>
@@ -436,5 +478,20 @@
       
       
     </footer>
+
+
+
+    <!-- Вся твоя разметка, включая разметку модалки "Заказать услугу" -->
+    <!-- Модальное окно с формой заявки открывается по клику на кнопку "Заказать услугу". Для того чтобы скрипт сработал
+    необходимо добавить в разметку специальные атрибуты, по которым скрипт ищет элементы:
+    
+    data-modal-open - на кнопку открытия модального окна
+    data-modal-close - на кнопку закрытия модального окна
+    data-modal - на бекдроп модального окна
+    После чего, перед закрывающим тегом body добавить тег script со ссылкой на файл скрипта для модально окна. -->
+
+
+    <!-- Ставим перед закрывающим тегом body -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>

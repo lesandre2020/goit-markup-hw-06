@@ -51,7 +51,7 @@
         <a href="" class="button">Заказать услугу</a>
       </section>
       
-      <div id="form-main">
+      <!-- <div id="form-main">
         <div id="form-div">
           <form class="form" id="form1" name="form1">
             <p class="name"><input class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" id="name"
@@ -67,19 +67,34 @@
             </div>
           </form>
         </div>
-      </div>
+      </div> -->
 
 
 
 
-      <!-- <form action="" class="contact-form">
-        <input type="text" class="contact-form-input" >
-        <input type="email" class="contact-form-input" >
-        <input type="tel" class="contact-form-input" >
+      <form action="" class="contact-form">
+        <a href="" class="social-list-item-link">
+          <svg>
+            <use href="./images/sprite.svg#icon-close"></use>
+          </svg>
+        </a>
+        <h2 class="form-section-title">Оставьте свои данные, мы вам перезвоним</h2>
+        
+        <input type="text" class="contact-form-input" name="user-name" placeholder="Name*" required minlength="2">
+        <input type="email" class="contact-form-input" name="user-email" placeholder="E-mail*" required>
+        <input type="tel" class="contact-form-input" name="user-tel" placeholder="Pnone*" required>
 
+
+        <section class="form-section">
+          <input type="checkbox" class="contact-form-checkbox">
+          <p>
+            Соглашаюсь с рассылкой и принимаю 
+            <a href="">Условия договора</a> 
+          </p>
+        </section>
         <button type="submit" class="contact-form-btm">Отправить</button>
         
-      </form> -->
+      </form>
 
         <section class="main-content advantages">
           <div class="conteiner">

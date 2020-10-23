@@ -712,32 +712,9 @@ button {
   border-radius: 4px;
 }
 
-/* старая форма */
-
-/* .contact-form {
-  display: flex;
-  flex-direction: column;
-  width: 528px;
-  height: 581px;
-  margin: auto;
-  padding: 40px;
-  background: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-}
-
-.contact-form-input {
-  height: 40px;
-  padding-left: 15px;
-  margin-bottom: 14px;
-} */
-
-/* енд старой формы */
-
 /* новая форма */
 
-html {
+/* html {
   background: url(http://imapo.ru/img/feedback-img.jpg) no-repeat;
   background-size: cover;
   height: 100%;
@@ -799,10 +776,10 @@ html {
 .focused {
   color: #30aed6;
   border: #30aed6 solid 3px;
-}
+} */
 
 /* Icons ---------------------------------- */
-#name {
+/* #name {
   background-image: url(http://imapo.ru/img/name.svg);
   background-size: 30px 30px;
   background-position: 11px 8px;
@@ -853,16 +830,21 @@ textarea:focus {
 }
 
 #button-blue {
-  font-family: "Montserrat", Arial, Helvetica, sans-serif;
   float: left;
   width: 100%;
-  border: #fbfbfb solid 4px;
+
   cursor: pointer;
-  background-color: #3498db;
+
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
   color: #fff;
-  font-size: 24px;
-  padding-top: 22px;
-  padding-bottom: 22px;
+  font-size: 16px;
+  line-height: 1.87;
+
+  padding-top: 10px;
+  padding-bottom: 55px;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
@@ -872,7 +854,7 @@ textarea:focus {
 
 #button-blue:hover {
   background-color: rgba(0, 0, 0, 0);
-  color: #0493bd;
+  color: #2196f3;
 }
 
 .submit:hover {
@@ -904,6 +886,38 @@ textarea:focus {
     padding-left: 3%;
     padding-right: 3%;
   }
-}
+} */
 
 /* енд нов формы */
+
+/* старая форма */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 528px;
+  height: 581px;
+  margin: 0 auto;
+  padding: 40px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.contact-form-input {
+  height: 40px;
+  padding-left: 15px;
+  margin-bottom: 14px;
+}
+
+.form-section-title {
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--title-text-color);
+}
+
+/* енд старой формы */

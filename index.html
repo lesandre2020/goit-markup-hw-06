@@ -73,25 +73,33 @@
 
 
       <form action="" class="contact-form">
-        <a href="" class="social-list-item-link">
-          <svg>
+        <a href="" class="close-button">
+          <svg class="close-button-link">
             <use href="./images/sprite.svg#icon-close"></use>
           </svg>
         </a>
         <h2 class="form-section-title">Оставьте свои данные, мы вам перезвоним</h2>
         
-        <input type="text" class="contact-form-input" name="user-name" placeholder="Name*" required minlength="2">
-        <input type="email" class="contact-form-input" name="user-email" placeholder="E-mail*" required>
-        <input type="tel" class="contact-form-input" name="user-tel" placeholder="Pnone*" required>
+        <label for="name">Имя</label>
+        <input type="text" class="contact-form-input" name="user-name" placeholder="Name*" required minlength="2" id="name">
+        
+        <label for="pnone">Телефон</label>
+        <input type="tel" class="contact-form-input" name="user-tel" placeholder="Pnone*" required id="pnone">
 
-
+        <label for="email">Почта</label>
+        <input type="email" class="contact-form-input" name="user-email" placeholder="E-mail*" required id="email">
+        
+        <label for="comment">Комментарий</label>
+        <textarea name="user-сomment" id="comment" class="contact-form-message " placeholder="Введите текст" maxlength="60"></textarea>
+        
         <section class="form-section">
-          <input type="checkbox" class="contact-form-checkbox">
+          <input type="checkbox" value="accept" class="contact-form-checkbox">
           <p>
             Соглашаюсь с рассылкой и принимаю 
             <a href="">Условия договора</a> 
           </p>
         </section>
+        
         <button type="submit" class="contact-form-btm">Отправить</button>
         
       </form>
